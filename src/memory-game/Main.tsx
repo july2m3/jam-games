@@ -14,7 +14,6 @@ import {
 import './style.css';
 
 const MemoryGame = () => {
-  const [score, setScore] = useState(0);
   // const buffer = document.createElement('canvas').getContext('2d');
   const [buffer, setBuffer] = useState(
     document.createElement('canvas').getContext('2d'),
@@ -57,9 +56,8 @@ const MemoryGame = () => {
         newGrid[x][y].back = newGrid[x][y].front;
         newGrid[firstImage.x][firstImage.y].back = newGrid[x][y].front;
         updateGrid(newGrid);
-        setScore(score + 1);
       }
-      setTimeout(() => drawGrid(myCanvas, buffer, grid, size), 500);
+      setTimeout(() => drawGrid(myCanvas, buffer, grid, size), 1000);
       updateFirstImage({ clickedOnFirstImage: false, x, y });
       return;
     }
@@ -121,10 +119,6 @@ const MemoryGame = () => {
 
   return (
     <div className='memory-game'>
-      <p className='p__score'>
-        Score:
-        {score}
-      </p>
       <canvas
         className='memory-game-canvas'
         ref={myCanvas}

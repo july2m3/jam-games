@@ -7,6 +7,7 @@ import rectangleImage from './Rectangle.png';
 import triangleImage from './Triangle.png';
 import blankImage from './Empty.png';
 import arrowImage from './Arrow.png';
+import cloudImage from './Cloud.png';
 
 const defineGridArray = () => (
   [
@@ -109,7 +110,7 @@ const convertNumberToImage = (num: number) => {
       imageSource = triangleImage;
       break;
     case 7:
-      imageSource = blankImage;
+      imageSource = cloudImage;
       break;
     default:
     case 8:

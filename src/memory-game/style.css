@@ -1,11 +1,3 @@
-.p__score {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  font-size: 2rem;
-  color: blue;
-}
-
 canvas {
   border: 1px solid black;
   margin-top: 50px;

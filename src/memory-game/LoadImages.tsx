@@ -8,6 +8,8 @@ import lineimage from './Line.png';
 import rectangleImage from './Rectangle.png';
 import triangleImage from './Triangle.png';
 import blankImage from './Empty.png';
+import arrowImage from './Arrow.png';
+import cloudImage from './Cloud.png';
 
 const LoadImages = () => (
   <>
@@ -19,6 +21,8 @@ const LoadImages = () => (
     <img src={rectangleImage} alt='d' className='blank' />
     <img src={triangleImage} alt='d' className='blank' />
     <img src={blankImage} alt='d' className='blank' />
+    <img src={arrowImage} alt='d' className='blank' />
+    <img src={cloudImage} alt='d' className='blank' />
   </>
 );
 
