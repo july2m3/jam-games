@@ -65,18 +65,20 @@ const shuffleCards = (cards: any) => {
   }
 };
 
-const setupGrid = (grid: any) => {
+const setupGameBoard = (grid: any) => {
   const cards = [7, 7, 8, 8, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6];
   shuffleCards(cards);
+  const newGrid = grid;
 
-  for (let i = 0; i < grid.length; i++) {
-    for (let j = 0; j < grid[i].length; j++) {
+  for (let i = 0; i < newGrid.length; i++) {
+    for (let j = 0; j < newGrid[i].length; j++) {
       if (cards.length) {
-        grid[i][j].front = cards[cards.length - 1];
+        newGrid[i][j].front = cards[cards.length - 1];
         cards.pop();
       }
     }
   }
+  return newGrid;
 };
 
 const convertNumberToImage = (num: number) => {
@@ -142,4 +144,4 @@ const drawGrid = (
 };
 
 
-export { defineGridArray, updateCanvas, setupGrid as setupGameBoard, drawGrid, convertNumberToImage };
+export { defineGridArray, updateCanvas, setupGameBoard, drawGrid, convertNumberToImage };
