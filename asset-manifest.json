@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/jam-games/static/css/main.efb45a90.chunk.css",
-    "main.js": "/jam-games/static/js/main.9d6e3df3.chunk.js",
-    "main.js.map": "/jam-games/static/js/main.9d6e3df3.chunk.js.map",
+    "main.css": "/jam-games/static/css/main.24ab9849.chunk.css",
+    "main.js": "/jam-games/static/js/main.cd507d99.chunk.js",
+    "main.js.map": "/jam-games/static/js/main.cd507d99.chunk.js.map",
     "runtime-main.js": "/jam-games/static/js/runtime-main.1e2273a2.js",
     "runtime-main.js.map": "/jam-games/static/js/runtime-main.1e2273a2.js.map",
-    "static/js/2.8b75b1e8.chunk.js": "/jam-games/static/js/2.8b75b1e8.chunk.js",
-    "static/js/2.8b75b1e8.chunk.js.map": "/jam-games/static/js/2.8b75b1e8.chunk.js.map",
+    "static/js/2.d015d917.chunk.js": "/jam-games/static/js/2.d015d917.chunk.js",
+    "static/js/2.d015d917.chunk.js.map": "/jam-games/static/js/2.d015d917.chunk.js.map",
     "index.html": "/jam-games/index.html",
-    "precache-manifest.69ef45492dac1a413e7f883be94ad7da.js": "/jam-games/precache-manifest.69ef45492dac1a413e7f883be94ad7da.js",
+    "precache-manifest.9a2042ae2fe6757992b32e0127c122af.js": "/jam-games/precache-manifest.9a2042ae2fe6757992b32e0127c122af.js",
     "service-worker.js": "/jam-games/service-worker.js",
-    "static/css/main.efb45a90.chunk.css.map": "/jam-games/static/css/main.efb45a90.chunk.css.map",
-    "static/js/2.8b75b1e8.chunk.js.LICENSE.txt": "/jam-games/static/js/2.8b75b1e8.chunk.js.LICENSE.txt"
+    "static/css/main.24ab9849.chunk.css.map": "/jam-games/static/css/main.24ab9849.chunk.css.map",
+    "static/js/2.d015d917.chunk.js.LICENSE.txt": "/jam-games/static/js/2.d015d917.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1e2273a2.js",
-    "static/js/2.8b75b1e8.chunk.js",
-    "static/css/main.efb45a90.chunk.css",
-    "static/js/main.9d6e3df3.chunk.js"
+    "static/js/2.d015d917.chunk.js",
+    "static/css/main.24ab9849.chunk.css",
+    "static/js/main.cd507d99.chunk.js"
   ]
 }
