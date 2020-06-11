@@ -6,6 +6,7 @@ import lineimage from './Line.png';
 import rectangleImage from './Rectangle.png';
 import triangleImage from './Triangle.png';
 import blankImage from './Empty.png';
+import arrowImage from './Arrow.png';
 
 const defineGridArray = () => (
   [
@@ -111,7 +112,8 @@ const convertNumberToImage = (num: number) => {
       imageSource = blankImage;
       break;
     default:
-      imageSource = lineimage;
+    case 8:
+      imageSource = arrowImage;
       break;
   }
   currentImage.src = imageSource;
@@ -126,17 +128,13 @@ const drawGrid = (
 ) => {
   if (myCanvas === null || buffer === null) return;
 
-  // const currentImage = new Image(100, 100);
-  // currentImage.src = BackOfCards;
-
   for (let i = 0; i < grid.length; i++) {
     for (let j = 0; j < grid[i].length; j++) {
       buffer!.drawImage(
-        convertNumberToImage(grid[j][i].back),
+        convertNumberToImage(grid[i][j].back),
         i * size,
         j * size,
       );
-      //  buffer!.drawImage(convertNumberToImage(grid[i][j].front), i * size, j * size);
     }
   }
 

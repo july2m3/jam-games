@@ -44,7 +44,8 @@ const MemoryGame = () => {
 
   const compareClickedImages = (x: number, y: number) => {
     if (firstImage.clickedOnFirstImage) {
-      console.log('second image clicked');
+      console.clear();
+      console.log(grid[x][y].front, grid[firstImage.x][firstImage.y].front);
       if (x === firstImage.x && y === firstImage.y) {
         updateFirstImage({ clickedOnFirstImage: false, x, y });
         return;
@@ -56,15 +57,13 @@ const MemoryGame = () => {
         newGrid[x][y].back = newGrid[x][y].front;
         newGrid[firstImage.x][firstImage.y].back = newGrid[x][y].front;
         updateGrid(newGrid);
-        updateCanvas(myCanvas.current!, buffer!);
         setScore(score + 1);
-        updateFirstImage({ clickedOnFirstImage: false, x, y });
-        return;
       }
-
+      setTimeout(() => drawGrid(myCanvas, buffer, grid, size), 500);
       updateFirstImage({ clickedOnFirstImage: false, x, y });
       return;
     }
+
     updateFirstImage({
       clickedOnFirstImage: true,
       x,
@@ -79,23 +78,11 @@ const MemoryGame = () => {
       y * size,
     );
     updateCanvas(myCanvas.current!, buffer!);
-    if (firstImage.clickedOnFirstImage) {
-      buffer!.drawImage(
-        convertNumberToImage(grid[x][y].back),
-        x * size,
-        y * size,
-      );
-    }
-
-    // setTimeout(() => {
-    //   buffer!.drawImage(
-    //     convertNumberToImage(grid[x][y].back),
-    //     x * size,
-    //     y * size,
-    //   );
-    //   updateCanvas(myCanvas.current!, buffer!);
-    // }, 500);
-
+    buffer!.drawImage(
+      convertNumberToImage(grid[x][y].back),
+      x * size,
+      y * size,
+    );
     compareClickedImages(x, y);
   };
 
@@ -111,6 +98,12 @@ const MemoryGame = () => {
     const xCoordinate = Math.floor(mouseX / 100);
     const yCoordinate = Math.floor(mouseY / 100);
 
+    if (
+      grid[xCoordinate][yCoordinate].front ===
+      grid[xCoordinate][yCoordinate].back
+    ) {
+      return;
+    }
     showCard(xCoordinate, yCoordinate);
   };
 
