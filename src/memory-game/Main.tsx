@@ -13,7 +13,28 @@ import {
 
 import './style.css';
 
+// fix this error lol, seee this
+// https://javascript.info/async-await
+const LoadUnsplashImages = (props: any) => {
+  const { imageOne } = props;
+  return <img src={imageOne} alt="test" />;
+};
+
+const getImages = async (): string => {
+  let imgUrl = 'no image';
+  fetch('https://source.unsplash.com/random/100x100')
+    .then((res: any) => {
+      imgUrl = res.url;
+    })
+    .catch((err: any) => {
+      console.log(err);
+    });
+  console.log(imgUrl);
+  return imgUrl;
+};
+
 const MemoryGame = () => {
+  const [imgs, setImgs] = useState('');
   // const buffer = document.createElement('canvas').getContext('2d');
   const [buffer, setBuffer] = useState(
     document.createElement('canvas').getContext('2d'),
@@ -39,7 +60,17 @@ const MemoryGame = () => {
 
     updateGrid(setupGameBoard(grid));
     drawGrid(myCanvas, buffer, grid, size);
-  }, [buffer]);
+
+    // fetch('https://source.unsplash.com/random/100x100')
+    // .then((res) => {
+    // console.log(res);
+    //   setImgs(res.url);
+    // })
+    // .catch((err) => {
+    //   console.log('Error happened during fetching!', err);
+    // });
+    setImgs(getImages());
+  }, [buffer, grid]);
 
   const compareClickedImages = (x: number, y: number) => {
     if (firstImage.clickedOnFirstImage) {
@@ -118,13 +149,14 @@ const MemoryGame = () => {
   };
 
   return (
-    <div className='memory-game'>
+    <div className="memory-game">
       <canvas
-        className='memory-game-canvas'
+        className="memory-game-canvas"
         ref={myCanvas}
         onClick={handleClick}
       />
       <LoadImages />
+      {imgs && <LoadUnsplashImages imageOne={imgs} />}
     </div>
   );
 };
