@@ -13,13 +13,6 @@ import {
 
 import './style.css';
 
-// fix this error lol, seee this
-// https://javascript.info/async-await
-const LoadUnsplashImages = (props: any) => {
-  const { imageOne } = props;
-  return <img src={imageOne} alt="test" />;
-};
-
 const MemoryGame = () => {
   const [imgs, setImgs] = useState('');
   // const buffer = document.createElement('canvas').getContext('2d');
@@ -33,7 +26,7 @@ const MemoryGame = () => {
   });
   // const grid = defineGridArray();
   const [grid, updateGrid] = useState(defineGridArray);
-  const size = 100; //100 pixels
+  const size = 100;
 
   const myCanvas = useRef<HTMLCanvasElement>(null);
 
@@ -47,12 +40,34 @@ const MemoryGame = () => {
 
     updateGrid(setupGameBoard(grid));
     drawGrid(myCanvas, buffer, grid, size);
+
+    const setupGameBoardImages = async () => {
+      const cards = new Array(16);
+      for (let i = 0; i < cards.length; i++) {
+        cards[i] = (
+          await fetch('https://source.unsplash.com/random/100x100')
+        ).url;
+      }
+      console.log(cards[5]);
+    };
+    setupGameBoardImages();
+
+    // fetch('https://source.unsplash.com/random/100x100')
+    // .then((res) => {
+    // console.log(res);
+    //   setImgs(res.url);
+    // })
+    // .catch((err) => {
+    //   console.log('Error happened during fetching!', err);
+    // });
+
+    // setImgs(getImages());
   }, [buffer, grid]);
 
   const compareClickedImages = (x: number, y: number) => {
     if (firstImage.clickedOnFirstImage) {
-      console.clear();
-      console.log(grid[x][y].front, grid[firstImage.x][firstImage.y].front);
+      // console.clear();
+      // console.log(grid[x][y].front, grid[firstImage.x][firstImage.y].front);
       if (x === firstImage.x && y === firstImage.y) {
         updateFirstImage({ clickedOnFirstImage: false, x, y });
         return;
@@ -133,7 +148,7 @@ const MemoryGame = () => {
         onClick={handleClick}
       />
       <LoadImages />
-      {imgs && <LoadUnsplashImages imageOne={imgs} />}
+      {/* {imgs && <LoadUnsplashImages imageOne={imgs} />} */}
     </div>
   );
 };
