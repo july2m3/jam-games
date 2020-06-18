@@ -16,7 +16,7 @@ const MemoryGame = () => {
     y: 0,
   });
   const [grid, updateGrid] = useState(GameFunctions.defineGridArray);
-  const size = 100; //100 pixels
+  const size = 100;
 
   const myCanvas = useRef<HTMLCanvasElement>(null);
 
@@ -24,7 +24,9 @@ const MemoryGame = () => {
   useEffect(() => {
     myCanvas.current!.width = window.innerWidth * 0.7;
     myCanvas.current!.height = window.innerHeight * 0.7;
-    myCanvas.current!.style.background = 'lightblue';
+    // myCanvas.current!.style.background = `url(${bgCover})`;
+    myCanvas.current!.style.background = 'white';
+
     buffer!.canvas.height = grid.length * size;
     buffer!.canvas.width = grid[0].length * size;
 
@@ -113,6 +115,7 @@ const MemoryGame = () => {
 
   return (
     <div className='memory-game'>
+      <h1 className='memory-game__title'>Cat Memory Game</h1>
       <canvas
         className='memory-game-canvas'
         ref={myCanvas}

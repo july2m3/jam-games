@@ -1,10 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
-// import MemoryGame from './memory-game/Main';
 import MemoryGame from './memory-game/Main';
 import './App.css';
-
-// link is this video: https://www.youtube.com/watch?v=lhNdUVh3qCc
 
 const Home = () => <h1>Welcome Home</h1>;
 const About = () => <h1>About this page</h1>;
@@ -21,7 +18,7 @@ const App = () => (
             <Link to='/about'>About</Link>
           </li>
           <li>
-            <Link to='/memory-game'>Memory Game</Link>
+            <Link to='/memory-game'>Cat Memory Game</Link>
           </li>
         </ul>
       </nav>

@@ -1,13 +1,12 @@
-import BackOfCards from './images/BackTwo.png';
-import starImage from './images/Star.png';
-import circleImage from './images/Circle.png';
-import hexagonImage from './images/Hexagon.png';
-import lineimage from './images/Line.png';
-import rectangleImage from './images/Rectangle.png';
-import triangleImage from './images/Triangle.png';
-import blankImage from './images/Empty.png';
-import arrowImage from './images/Arrow.png';
-import cloudImage from './images/Cloud.png';
+import catBack from './images/catBack.png';
+import catOne from './images/catOne.jpg';
+import catTwo from './images/catTwo.jpg';
+import catThree from './images/catThree.jpg';
+import catFour from './images/catFour.jpg';
+import catFive from './images/catFive.jpg';
+import catSix from './images/catSix.jpg';
+import catSeven from './images/catSeven.jpg';
+import catEight from './images/catEight.jpg';
 
 const defineGridArray = () => [
   [
@@ -82,37 +81,37 @@ const setupGameBoard = (grid: any) => {
 };
 
 const convertNumberToImage = (num: number) => {
-  const currentImage = new Image(90, 90);
-  let imageSource = triangleImage;
+  const currentImage = new Image();
+  let imageSource = catEight;
 
   switch (num) {
     case 0:
-      imageSource = BackOfCards;
+      imageSource = catBack;
       break;
     case 1:
-      imageSource = starImage;
+      imageSource = catOne;
       break;
     case 2:
-      imageSource = circleImage;
+      imageSource = catTwo;
       break;
     case 3:
-      imageSource = hexagonImage;
+      imageSource = catThree;
       break;
     case 4:
-      imageSource = lineimage;
+      imageSource = catFour;
       break;
     case 5:
-      imageSource = rectangleImage;
+      imageSource = catFive;
       break;
     case 6:
-      imageSource = triangleImage;
+      imageSource = catSix;
       break;
     case 7:
-      imageSource = cloudImage;
+      imageSource = catSeven;
       break;
     default:
     case 8:
-      imageSource = arrowImage;
+      imageSource = catEight;
       break;
   }
   currentImage.src = imageSource;

@@ -1,9 +1,12 @@
 canvas {
-  border: 1px solid black;
   margin-top: 50px;
-  margin-left: 20px;
+  margin-left: 10%;
 }
 
 .blank {
   display: none;
+}
+
+.memory-game__title {
+  text-align: center;
 }
