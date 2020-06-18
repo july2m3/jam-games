@@ -1,15 +1,15 @@
 import React from 'react';
 
-import BackOfCards from './BackTwo.png';
-import starImage from './Star.png';
-import circleImage from './Circle.png';
-import hexagonImage from './Hexagon.png';
-import lineimage from './Line.png';
-import rectangleImage from './Rectangle.png';
-import triangleImage from './Triangle.png';
-import blankImage from './Empty.png';
-import arrowImage from './Arrow.png';
-import cloudImage from './Cloud.png';
+import BackOfCards from './images/BackTwo.png';
+import starImage from './images/Star.png';
+import circleImage from './images/Circle.png';
+import hexagonImage from './images/Hexagon.png';
+import lineimage from './images/Line.png';
+import rectangleImage from './images/Rectangle.png';
+import triangleImage from './images/Triangle.png';
+import blankImage from './images/Empty.png';
+import arrowImage from './images/Arrow.png';
+import cloudImage from './images/Cloud.png';
 
 const LoadImages = () => (
   <>
