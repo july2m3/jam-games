@@ -82,7 +82,7 @@ const setupGameBoard = (grid: any) => {
 };
 
 const convertNumberToImage = (num: number) => {
-  const currentImage = new Image(100, 100);
+  const currentImage = new Image(90, 90);
   let imageSource = triangleImage;
 
   switch (num) {
@@ -133,6 +133,8 @@ const drawGrid = (
         convertNumberToImage(grid[i][j].back),
         i * size,
         j * size,
+        90,
+        90,
       );
     }
   }

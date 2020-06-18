@@ -64,12 +64,16 @@ const MemoryGame = () => {
       GameFunctions.convertNumberToImage(grid[x][y].front),
       x * size,
       y * size,
+      90,
+      90,
     );
     GameFunctions.updateCanvas(myCanvas.current!, buffer!);
     buffer!.drawImage(
       GameFunctions.convertNumberToImage(grid[x][y].back),
       x * size,
       y * size,
+      90,
+      90,
     );
     compareClickedImages(x, y);
   };

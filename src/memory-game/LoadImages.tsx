@@ -10,6 +10,7 @@ import triangleImage from './images/Triangle.png';
 import blankImage from './images/Empty.png';
 import arrowImage from './images/Arrow.png';
 import cloudImage from './images/Cloud.png';
+import bgCover from './images/bgCover.jpg';
 
 const LoadImages = () => (
   <>
@@ -23,6 +24,7 @@ const LoadImages = () => (
     <img src={blankImage} alt='d' className='blank' />
     <img src={arrowImage} alt='d' className='blank' />
     <img src={cloudImage} alt='d' className='blank' />
+    <img src={bgCover} alt='d' className='blank' />
   </>
 );
 
