@@ -115,7 +115,7 @@ const MemoryGame = () => {
 
   return (
     <div className='memory-game'>
-      <h1 className='memory-game__title'>Cat Memory Game</h1>
+      <h1 className='memory-game__title'>🐈 Cat Memory Game 🐈</h1>
       <canvas
         className='memory-game-canvas'
         ref={myCanvas}
