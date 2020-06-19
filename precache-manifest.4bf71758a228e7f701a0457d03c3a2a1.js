@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5f1d323d37308dea079d1170ef7345af",
+    "revision": "df1f230cd58e63e48aa1a7e0056a3ba3",
     "url": "/jam-games/index.html"
   },
   {
-    "revision": "d5c87bf1990ebc169a78",
+    "revision": "346d41317396339ac31e",
     "url": "/jam-games/static/css/main.f367e8b4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jam-games/static/js/2.24f7310f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d5c87bf1990ebc169a78",
-    "url": "/jam-games/static/js/main.48385870.chunk.js"
+    "revision": "346d41317396339ac31e",
+    "url": "/jam-games/static/js/main.39e8e8aa.chunk.js"
   },
   {
     "revision": "3af59122ea4be491565c",

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/jam-games/static/css/main.f367e8b4.chunk.css",
-    "main.js": "/jam-games/static/js/main.48385870.chunk.js",
-    "main.js.map": "/jam-games/static/js/main.48385870.chunk.js.map",
+    "main.js": "/jam-games/static/js/main.39e8e8aa.chunk.js",
+    "main.js.map": "/jam-games/static/js/main.39e8e8aa.chunk.js.map",
     "runtime-main.js": "/jam-games/static/js/runtime-main.1e2273a2.js",
     "runtime-main.js.map": "/jam-games/static/js/runtime-main.1e2273a2.js.map",
     "static/js/2.24f7310f.chunk.js": "/jam-games/static/js/2.24f7310f.chunk.js",
     "static/js/2.24f7310f.chunk.js.map": "/jam-games/static/js/2.24f7310f.chunk.js.map",
     "index.html": "/jam-games/index.html",
-    "precache-manifest.8753f4d950d10dca5c8d7bf2642479eb.js": "/jam-games/precache-manifest.8753f4d950d10dca5c8d7bf2642479eb.js",
+    "precache-manifest.4bf71758a228e7f701a0457d03c3a2a1.js": "/jam-games/precache-manifest.4bf71758a228e7f701a0457d03c3a2a1.js",
     "service-worker.js": "/jam-games/service-worker.js",
     "static/css/main.f367e8b4.chunk.css.map": "/jam-games/static/css/main.f367e8b4.chunk.css.map",
     "static/js/2.24f7310f.chunk.js.LICENSE.txt": "/jam-games/static/js/2.24f7310f.chunk.js.LICENSE.txt",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.1e2273a2.js",
     "static/js/2.24f7310f.chunk.js",
     "static/css/main.f367e8b4.chunk.css",
-    "static/js/main.48385870.chunk.js"
+    "static/js/main.39e8e8aa.chunk.js"
   ]
 }
