@@ -1,0 +1,17 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root"),
+);
+
+<<<<<<< HEAD
+serviceWorker.unregister();
+=======
+serviceWorker.register();
+>>>>>>> a8a36df17e1e0980a56808fd784eae9191278ec8
