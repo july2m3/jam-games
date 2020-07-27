@@ -18,7 +18,7 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "jsx-quotes": [2, "prefer-single"],
+    "jsx-quotes": [2, "prefer-double"],
     "operator-linebreak": [0],
     "object-curly-newline": [0],
     "no-param-reassign": [0],
