@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './style.scss';
+
 interface IProps {}
 
 const SnakeGame = (props: IProps) => {
